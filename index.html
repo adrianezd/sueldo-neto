@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculadora de sueldo neto 2026 — De bruto a neto</title>
+<meta name="description" content="Calcula tu sueldo neto 2026 a partir del bruto anual: IRPF, Seguridad Social, neto en 12 o 14 pagas, cuánto paga tu empresa por ti y qué día del año dejas de trabajar para Hacienda.">
+<link rel="canonical" href="https://adrianezd.github.io/sueldo-neto/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2b59c3">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de sueldo neto 2026">
+<meta property="og:description" content="De bruto a neto en un segundo, y qué día del año empiezas a trabajar para ti.">
+<meta property="og:url" content="https://adrianezd.github.io/sueldo-neto/">
+<meta property="og:locale" content="es_ES">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>💶 Sueldo neto 2026</h1>
+  <p class="sub">De bruto a neto, y cuánto se queda por el camino</p>
+</header>
+<main>
+  <section class="tarjeta form">
+    <label>Sueldo bruto anual
+      <div class="campo"><input id="bruto" type="number" inputmode="numeric" min="0" step="500" value="28000"><span>€</span></div>
+    </label>
+    <label>Pagas
+      <select id="pagas"><option value="12">12 pagas</option><option value="14">14 pagas</option></select>
+    </label>
+    <label>Hijos menores de 25
+      <select id="hijos"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+    </label>
+    <label>De ellos, menores de 3 años
+      <select id="peques"><option>0</option><option>1</option><option>2</option><option>3</option></select>
+    </label>
+    <label class="check"><input type="checkbox" id="mayor"> Tengo más de 65 años</label>
+  </section>
+
+  <section class="tarjeta resultado">
+    <div class="etq">Cobras al mes</div>
+    <div class="grande" id="mes">–</div>
+    <div class="sub" id="anual"></div>
+    <div class="barra" id="barra"></div>
+    <ul class="leyenda" id="leyenda"></ul>
+  </section>
+
+  <section class="cifras">
+    <div class="tarjeta"><div class="etq">Retención IRPF</div><b id="tipo">–</b></div>
+    <div class="tarjeta"><div class="etq">Tu empresa paga</div><b id="empresa">–</b></div>
+    <div class="tarjeta"><div class="etq">Trabajas para ti desde</div><b id="libre">–</b></div>
+  </section>
+
+  <section class="tarjeta">
+    <p id="frase" class="frase"></p>
+    <button class="boton" id="compartir">Compartir</button>
+  </section>
+
+  <section class="texto">
+    <h2>Cómo se calcula</h2>
+    <p>Seguridad Social del trabajador: 6,50 % (contingencias comunes 4,70 %, desempleo 1,55 %, formación 0,10 % y MEI 0,15 %), con el tope de la base máxima. Coste para la empresa: unos 32 % más sobre la base de cotización, con un tipo de accidentes medio.</p>
+    <p>IRPF: se resta la Seguridad Social y 2.000 € de gastos, se aplica la reducción por rendimientos del trabajo y la escala general estatal más la autonómica supletoria, menos los mínimos personal y familiar. Los sueldos cercanos al salario mínimo quedan exentos.</p>
+    <p>Es una estimación: cada comunidad tiene su propia escala y la retención real depende de tu situación. La diferencia suele ser de pocos euros al mes.</p>
+    <p>"Trabajas para ti desde" reparte el año entero entre lo que pagas tú en IRPF y Seguridad Social y lo que te llevas.</p>
+  </section>
+</main>
+<footer>Hecho por adrianezd. No guarda ningún dato.</footer>
+<script src="script.js"></script>
+</body>
+</html>

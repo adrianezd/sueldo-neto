@@ -1,0 +1,12 @@
+{
+  "name": "Sueldo neto 2026",
+  "short_name": "Sueldo neto",
+  "description": "Calculadora de sueldo neto 2026: de bruto a neto con IRPF y Seguridad Social.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#2b59c3",
+  "theme_color": "#2b59c3",
+  "lang": "es",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
